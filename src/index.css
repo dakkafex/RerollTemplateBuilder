@@ -4,7 +4,6 @@
 
 /* Add global styles to form elements using Tailwind utilities */
 @layer base {
-
   input,
   select,
   textarea {
@@ -15,26 +14,25 @@
     @apply block mb-1 font-medium text-sm;
   }
 
-  button {}
+  button {
+  }
 
   .form-textarea {
-    @apply h-28
+    @apply h-28;
   }
 
   .checkinput {
-    @apply inline-flex px-1
+    @apply inline-flex px-1;
   }
 
   .checkinput label {
-    @apply flex items-center cursor-pointer relative
+    @apply flex items-center cursor-pointer relative;
   }
-
 
   .checkinput input {
-    @apply h-5 w-5 cursor-pointer transition-all shadow hover:shadow-md mr-2
+    @apply h-5 w-5 cursor-pointer transition-all shadow hover:shadow-md mr-2;
   }
 }
-
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -108,4 +106,20 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.spell-slots {
+  @apply grid grid-cols-3
+}
+.spell-slots .nr-cont {
+  @apply text-center
+}
+.spell-slots input {
+  appearance: textfield;
+  @apply justify-items-center
+}
+.spell-slots input::-webkit-outer-spin-button,
+.spell-slots input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
